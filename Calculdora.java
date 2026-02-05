@@ -1,20 +1,40 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package calculdora;
 
-/**
- *
- * @author pacho
- */
+import java.util.Scanner;
+
 public class Calculdora {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+
+        Scanner teclado = new Scanner(System.in);
+
+        double peso, altura, imc;
+
+        // Entrada de datos
+        System.out.print("Ingrese su peso en kilogramos: ");
+        peso = teclado.nextDouble();
+
+        System.out.print("Ingrese su altura en metros: ");
+        altura = teclado.nextDouble();
+
+        // Cálculo del IMC
+        imc = peso / (altura * altura);
+
+        // Mostrar IMC
+        System.out.println("\nSu IMC es: " + imc);
+
+        // Clasificación
+        if (imc < 18.5) {
+            System.out.println("Clasificación: Delgadez");
+        } else if (imc >= 18.5 && imc < 25) {
+            System.out.println("Clasificación: Peso normal");
+        } else if (imc >= 25 && imc < 30) {
+            System.out.println("Clasificación: Sobrepeso");
+        } else {
+            System.out.println("Clasificación: Obesidad");
+        }
+
+        teclado.close();
     }
-    
 }
+
