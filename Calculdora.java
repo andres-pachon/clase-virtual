@@ -18,7 +18,7 @@ public class Calculdora {
 
             switch (opcion) {
                 case 1:
-                    // IMC (lo que ya estaba)
+                   
                     System.out.print("Ingrese su peso en kilogramos: ");
                     double peso = sc.nextDouble();
 
@@ -40,7 +40,7 @@ public class Calculdora {
                     break;
 
                 case 2:
-                    // Grasa corporal (lo que ya estaba)
+                  
                     System.out.print("Ingrese su peso en kg: ");
                     peso = sc.nextDouble();
 
@@ -57,7 +57,7 @@ public class Calculdora {
                     break;
 
                 case 3:
-                    // ===== TU PARTE =====
+                    
                     System.out.print("Ingrese su Tasa Metabólica Basal (TMB): ");
                     double tmb = sc.nextDouble();
 
